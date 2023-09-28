@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Exploring different cities</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -10,6 +11,13 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <style>
+      caption {
+          text-align: left;
+          caption-side: top;
+          position: relative;
+      }
+  </style>
 </head>
 <title>Visit Cities with Dhruvitha Challa</title>
 <body>
@@ -39,6 +47,208 @@
   <p>
     The row with city names will break first because the class associated with it is col-md which is used for medium sized and larger screens. So when we reduce the size of the screen, the city names will not fit properly and hence will break. The letters are associated with the class col-sm-2 which is used for smaller screens, hence it fits properly. regenerate this   regenerate it regenerate this with new line
   </p>
-  </body>
-  </html>
+  
+  <div class="container">
+    <img src="Connecticut.jpg" class="img-fluid" alt="Image of Connecticut" height="400" width="400">
+    <img src="hyderabad.jpg" class="img-fluid" alt="Image of Hyderabad" height="400" width="400">
+    <img src="Austin.jpg" class="img-fluid" alt="Image of Austin" height="400" width="400">
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="thumbnail-container">
+    <img src="Austin.jpg" class="img-thumbnail" alt="Image of Connecticut" height="400" width="400">
+    <img src="hyderabad.jpg" class="img-thumbnail" alt="Image of Hyderabad" height="400" width="400">
+    <img src="Austin.jpg" class="img-thumbnail" alt="Image of Austin" height="400" width="400">
+</div>
+<br>
+<br>
+<br>
+
+
+
+<br>
+
+<table class="table table-bordered table-striped table-hover table-sm">
+    <caption>Cities, Rivers and Trees</caption>
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">Letter</th>
+            <th scope="col">City</th>
+            <th scope="col">River</th>
+            <th scope="col">Tree</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-info" scope="row">
+            <td>C</td>
+            <td>Connecticut</td>
+            <td>Cinder</td>
+            <td>Carob</td>
+        </tr>
+        <tr class="table-secondary" scope="row">
+            <td>H</td>
+            <td>Hyderabad</td>
+            <td>Hughes</td>
+            <td>Hackberry</td>
+        </tr>
+        <tr class="table-info" scope="row">
+            <td>A</td>
+            <td>Austin</td>
+            <td>Abita</td>
+            <td>Apple</td>
+        </tr>
+        <tr class="table-secondary" scope="row">
+            <td>L</td>
+            <td>Los Angeles</td>
+            <td>Lafayette</td>
+            <td>Liliac</td>
+        </tr>
+        <tr class="table-info" scope="row">
+            <td>L</td>
+            <td>Lahore</td>
+            <td>Lagunitas</td>
+            <td>Longan</td>
+        </tr>
+        <tr class="table-secondary" scope="row">
+            <td>A</td>
+            <td>Abuja</td>
+            <td>Abiqua Creek</td>
+            <td>Amla</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-sm">
+    <a class="navbar-brand" href="#">Button Groups</a>
+</nav>
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group me-2" role="group" aria-label="Image buttons">
+        <button type="button" class="btn btn-success">C</button>
+        <button type="button" class="btn btn-success">H</button>
+        <button type="button" class="btn btn-success">A</button>
+    </div>
+    <div class="btn-group me-2" role="group" aria-label="Alert buttons">
+        <button type="button" class="btn btn-warning">L</button>
+        <button type="button" class="btn btn-warning">L</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Danger buttons">
+        <button type="button" class="btn btn-danger">A</button>
+    </div>
+</div>
+
+<br>
+<br>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-sm">
+    <a class="navbar-brand" href="#">Dropdown</a>
+</nav>
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary active dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">C</a></li>
+            <li><a class="dropdown-item" href="#">H</a></li>
+            <li><a class="dropdown-item" href="#">A</a></li>
+            <li><a class="dropdown-item" href="#">L</a></li>
+            <li><a class="dropdown-item" href="#">L</a></li>
+            <li><a class="dropdown-item" href="#">A</a></li>
+        </ul>
+    </div>
+    <button type="button" class="btn btn-primary">H</button>
+    <button type="button" class="btn btn-primary">A</button>
+    <button type="button" class="btn btn-primary">L</button>
+    <button type="button" class="btn btn-primary">L</button>
+    <button type="button" class="btn btn-primary">A</button>
+</div>
+
+<br>
+<br>
+
+<div class="btn-group" role="group">
+    <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Reference to Pages
+    </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
+        <li><a class="dropdown-item" href="advanced.html">Advanced Page</a></li>
+    </ul>
+</div>
+
+<br>
+<br>
+
+<form>
+    <div class="form-group mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="form-group mb-3">
+        <label for="exampleInputPassword1" class="form-label">City</label>
+        <input type="text" class="form-control" id="userCity" placeholder="Enter your city">
+    </div>
+    <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<br>
+<br>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Austin.jpg" class="card-img-top" alt="City 1 Image">
+                <div class="card-body">
+                    <h5 class="card-title">Austin</h5>
+                    <p class="card-text">Austin is the capital city of the state of Texas in the United States. It is known for its vibrant culture, music scene, and outdoor activities.Austin is home to the University of Texas at Austin, one of the largest public universities in the United States. The university contributes to the city's vibrant intellectual and academic atmosphere.
+                    </p>
+                    <a href="austin.html" class="btn btn-primary" target="_blank">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Connecticut.jpg" class="card-img-top" alt="City 2 Image">
+                <div class="card-body">
+                    <h5 class="card-title">Connecticut</h5>
+                    <p class="card-text">Connecticut is one of the six New England states and is bordered by Massachusetts to the north, Rhode Island to the east, New York to the west, and Long Island Sound to the south. It has a diverse geography, with coastal areas along Long Island Sound, rolling hills, and forests.Connecticut played a significant role in the early history of the United States. It was one of the original Thirteen Colonies and played a key role in events leading up to the American Revolution. The state is rich in colonial history, and you can find many historic sites and landmarks.
+                    </p>
+                    <a href="connecticut.html" class="btn btn-primary" target="_blank">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="hyderabad.jpg" class="card-img-top" alt="City 3 Image">
+                <div class="card-body">
+                    <h5 class="card-title">Hyderabad</h5>
+                    <p class="card-text">Hyderabad is a major city located in the southern part of India, and it serves as the capital of the Indian state of Telangana. It is one of the country's most prominent and historic cities, known for its rich cultural heritage, economic significance, and technological advancements. Hyderabad is known for its cultural diversity, with a blend of traditions from different parts of India. The city's culture is a mix of South Indian, North Indian, and Islamic influences. It is also renowned for its unique cuisine, including the famous Hyderabadi biryani.
+                    </p>
+                    <a href="hyderabad.html" class="btn btn-primary" target="_blank">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+</body>
+
+</html>
  
